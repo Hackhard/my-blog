@@ -3,7 +3,8 @@ layout: default
 title: About
 permalink: /about/
 ---
-Hi everyone, this is Apratim and welcome to my blog.
+ Hello everyone !! I am Apratim Ranjan Chakrabarty and I'll be updating this blog for my future works and projects.
+ Looking forward to not only gain knowledge but also to document my learning, which might come helful in due course
 <!-- This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/) -->
 
 <!-- You can find the source code for Minima at GitHub:
