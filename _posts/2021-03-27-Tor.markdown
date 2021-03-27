@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Tor!"
+date:   2021-03-27 02:41:09 +0530
+categories: jekyll update
+---
+
+Introduction: 
+
+On ormally visiting a website, our computer makes a direct connection with the website’s server. Anyone monitoring your internet(generally the ISPs or sometimes gov or maybe MITM attackers) could read the packets of data and can find out information such as one's IP address, what website one's visiting, what port you're connected to. If the connection is not an HTTPS type, they might as well see the messages that are being sent.
+
+Though if using the HTTPS(Secured), no one would know the messages being transferred or said but the metadata is still being known to many.
+
+With Tor, your computer never communicates with the server directly but Tor creates a twisted path(called a circuit) through 3 or more Tor nodes(guard nodes, middle nodes and exit nodes), and sends the data through this path.
+
+The core principle of Tor is onion routing which is a technique for anonymous & secure communication over a public network. In onion routing messages are encapsulated in several layers of encryption just like an onion, which has multiple layers...
+So does a message going through Tor. Each layer in Tor is encryption, you are adding layers of encryption to a Tor message, as opposed to just adding 1 layer of encryption.
+
+This is why it’s called The Onion Routing Protocol, because it adds layers at each stage.
+
+The resulting onion (fully encapsulated message) is then transmitted through a series of computers in a network (called onion routers) with each computer peeling away a layer of the ‘onion’. This series of computers is called a path. Each layer contains the next destination - the next router the packet has to go to. When the final layer is decrypted you get the plaintext (non-encrypted message).
+
+The original author remains anonymous because each node in the network is only aware of the preceding and following nodes in the path (except the first node that does know who the sender is, but doesn’t know the final destination).
+
+This has led to attacks where large organisations with expansive resources run servers to attempt to be the first and last nodes in the network. If the organisation’s server is the first node, it knows who sent the message. If the organisation server is the last node, it knows the final destination and what the message says.
+
+[References](https://skerritt.blog/how-does-tor-really-work/)
