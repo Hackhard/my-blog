@@ -33,7 +33,7 @@ Comments in [ticket 40013](https://gitlab.torproject.org/tpo/community/support/-
 
 ### Resources: ###
 
-* (https://www.freehaven.net/anonbib/cache/differential-ndss2016.pdf)
-* https://www.freehaven.net/anonbib/cache/exit-blocking2017.pdf
-* https://giia.cs.georgetown.edu/~msherr/papers/senser.pdf
+* [Do You See What I See? Differential Treatment of Anonymous Users](https://www.freehaven.net/anonbib/cache/differential-ndss2016.pdf)
+* [Characterizing the Nature and Dynamics of Tor Exit Blocking](https://www.freehaven.net/anonbib/cache/exit-blocking2017.pdf)
+* [Validating Web Content with Senser](https://giia.cs.georgetown.edu/~msherr/papers/senser.pdf)
 
