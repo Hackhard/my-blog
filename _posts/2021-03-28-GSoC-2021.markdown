@@ -27,9 +27,17 @@ It generally produces 0.1 for Tor based browsers. Check out for yourselves, what
 
 Tracking how frequently [The Alexa Top 500 websites](https://www.alexa.com/topsites) return Captchas to Tor clients.
 Check for differences in non-Tor exits and different Tor exits, and track metrics like:
-"If certain exit relays are getting hit with Captchas more frequently than others?"
-"Does location have any specific impact with Captchas?"
+
+* "If certain exit relays are getting hit with Captchas more frequently than others?"
+* "Does location have any specific impact with Captchas?"
+
 Comments in [ticket 40013](https://gitlab.torproject.org/tpo/community/support/-/issues/40013) and the [original project ticket](https://gitlab.torproject.org/legacy/trac/-/issues/33010) could help with more ideas.
+
+### Mentors: ###
+
++ [Barkin Simsek](https://barkin.io/)
++ [Roger Dingledine (arma)](https://twitter.com/RogerDingledine)
++ Georg Koppen (GeKo)
 
 ### Resources: ###
 
