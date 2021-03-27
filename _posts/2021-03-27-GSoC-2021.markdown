@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "GSoC with Tor ?!"
+date: 2021-03-28 01:49:09 +0530
+categories: jekyll update
+---
+
+Hi everyone, 
+
+This being my last college year(ofc if I don't fail :P) , I'm looking forward to take part into GSoC '21, and I'm interested to contribute to the Tor Foundations, specifically I'm interested in their project: https://community.torproject.org/gsoc/alexa-captcha-monitoring/
+
+### What's the Problem: ###
+
+>We are an international team who believes everyone should have private access to the uncensored web.
+
+Tor fights for privacy and annonymous viewing or accessing of the uncensored web, but a large number of people have reported facing trouble accessing popular websites like: Reddit, Instagram, Google Search as they keep getting a lot of captchas, showing that these websites don't trsut annonymous viewing.
+This website : https://antcpt.com/eng/information/demo-form/recaptcha-3-test-score.html, scores browsers according to the reCAPTCHA v3(Google). 
+
+
+> All possible values are from 0.9 to 0.1.
+> Where 0.9 — probably a human, 0.1 — bot.
+> Values 0.3 and below are considered as very suspicious activity, these users are interpreted as bots.
+
+It generally produces 0.1 for Tor based browsers. Check out for yourselves, what scores you get :)
+
+### The Proposal: ###
+
+Tracking how frequently [The Alexa Top 500 websites](https://www.alexa.com/topsites) return Captchas to Tor clients.
+Check for differences in non-Tor exits and different Tor exits, and track metrics like:
+"If certain exit relays are getting hit with Captchas more frequently than others?"
+"Does location have any specific impact with Captchas?"
+Comments in [ticket 40013](https://gitlab.torproject.org/tpo/community/support/-/issues/40013) and the [original project ticket](https://gitlab.torproject.org/legacy/trac/-/issues/33010) could help with more ideas.
+
+### Resources: ###
+
+* https://www.freehaven.net/anonbib/cache/differential-ndss2016.pdf
+* https://www.freehaven.net/anonbib/cache/exit-blocking2017.pdf
+* https://giia.cs.georgetown.edu/~msherr/papers/senser.pdf
+
