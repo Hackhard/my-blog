@@ -35,7 +35,7 @@ Comments in [ticket 40013](https://gitlab.torproject.org/tpo/community/support/-
 
 ### Mentors: ###
 
-+ [Barkin Simsek](https://barkin.io/)
++ [Barkin Simsek (arma)](https://barkin.io/)
 + [Roger Dingledine (arma)](https://twitter.com/RogerDingledine)
 + Georg Koppen (GeKo)
 
