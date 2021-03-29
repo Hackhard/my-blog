@@ -123,6 +123,7 @@ Refs: [website 1](https://blog.cloudflare.com/cloudflare-onion-service/), [websi
 -----------------------------------------
 Tb [1] : Tor Browser  
 Nb [2] : Normal Browser 
+Senser paper could be accessed [here](https://giia.cs.georgetown.edu/~msherr/papers/senser.pdf)
 
 
 
