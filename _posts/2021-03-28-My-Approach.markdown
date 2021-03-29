@@ -89,10 +89,12 @@ if (status_code(Tb) != status_code(Nb)):
   return false      # either returns captcha or is blocked.
   
 else:
+
   if (DOM_len(Tb) << DOM_len(Nb)):
     return false    # The Website might be partially blocked. Look at Fig: 4
     
   else:
+  
     p_c_t = prepare_consensus(Tb)   # Prepare consensus for the website using Tor.
     p_c_n = prepare_consensus(Nb)   # Prepare consensus for the website using normal browser.
     
