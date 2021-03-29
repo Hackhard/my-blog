@@ -106,7 +106,7 @@ else:
     else:
 	return false    # The Website is not similar
   ```
-##### Further Works and Ideas: #####
+#### Further Works and Ideas: ####
 
 The ideas I will be aiming on are mentioned below, the basic idea for the Cpatcha Checker module has been discussed above.
 
