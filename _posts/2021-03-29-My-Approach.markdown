@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My Approach"
-date: 2021-03-29 11:03:09 +0530
+date: 2021-03-29 13:20:09 +0530
 categories: jekyll update
 ---
 
@@ -9,9 +9,9 @@ Hi everybody,
 
 After a bit of trial and errors on certain websites known to block the exit relays of Tor(reddit) found some interesting stuffs, that I didn't know of.
 
-Websites like [Reddit (i)](https://reddit.com) or [Samsung](https://www.samsung.com/) shows error like: _"503 Service Temporarily Unavailable"_ or _"Access Denied"_ which concludes that these websites kind of blocks Tor fully.  You could see [the comment](https://gitlab.torproject.org/tpo/community/support/-/issues/40013#note_2728858). Basically it lists my findings about reddit, it shows that one can access https://reddit.com using Tor, by logging in, tho one cannot remain annonymous after logging in, as the website knows the profile and get's quite some information, and that doesn't remain anonymous browsing anymore.
-Though there are alternatives like: [old reddit](https://old.reddit.com) and [reddit ssl](https://ssl.reddit.com) that doesn't require logging in and one can browse annonymously.
-But other websites like [instagram](https://instagram.com) one needs to login in, to view the content. 
+Websites like [Reddit (i)](https://reddit.com) or [Samsung](https://www.samsung.com/) shows error like: _"503 Service Temporarily Unavailable"_ or _"Access Denied"_ which concludes that these websites kind of blocks Tor fully.  You could see [the comment](https://gitlab.torproject.org/tpo/community/support/-/issues/40013#note_2728858). Basically it lists my findings about reddit, it shows that one can access https://reddit.com using Tor, by logging in, tho one cannot remain anonymous after logging in, as the website knows the profile and gets quite some information, and that doesn't remain anonymous browsing anymore.
+Though there are alternatives like: [old reddit](https://old.reddit.com) and [reddit ssl](https://ssl.reddit.com) that doesn't require logging in and one can browse anonymously.
+But other websites like [Instagram](https://instagram.com) one needs to login in, to view the content. 
 
 Websites like [Google (ii)](https://google.com) loads without any restrictions, but searching up something, like maybe "Tor" [Google Search Tor](https://www.google.com/search?q=tor) returns Captcha. 
 Refer the image below: 
@@ -26,11 +26,11 @@ Last but not the least, websites such as [Github (iv)](https://github.com/) that
 Above mentioned points can therefore be summarized into below 4 points. They are:
 
 1. Websites that don't block Tor      [iv]
-2. Websites that partially block Tor  [iii]
+2. Websites that partially block Tor   [iii]
 3. Websites that returns captchas     [ii]
 4. Websites that completely block Tor [i]
 
-### **Detailed Prospective:** ###
+### **Detailed Prospective: ** ###
 
 Below I've tried adding the low level flowchart, as well as the working and the logic part, that could be useful in the future.
 
@@ -51,7 +51,7 @@ Website Over Tor | Website not over Tor
 
 Or even in cases like these: 
 
-Website Over Tor | Website not over Tor
+Website over Tor | Website not over Tor
 --------|--------
 ![image](https://user-images.githubusercontent.com/34208125/112789352-882d1d80-907a-11eb-92ee-a012a2bc8bc6.png) | ![image](https://user-images.githubusercontent.com/34208125/112789391-9b3fed80-907a-11eb-90a6-88012df9c589.png)
 {Fig 1.2}
@@ -60,7 +60,7 @@ If for some reasons we cannot differentiate using the superficial information. L
 We next move to other options like:
 * Compare the _length of generated DOM_ from both Tb and Nb, which might work for a case below: 
  
-Website Over Tor | Website not over Tor
+Website over Tor | Website not over Tor
 --------|--------
 ![image](https://user-images.githubusercontent.com/34208125/112789546-f4a81c80-907a-11eb-8961-4563fb040236.png) | ![image](https://user-images.githubusercontent.com/34208125/112789554-f83ba380-907a-11eb-9192-f65e649e344d.png)
 {Fig 1.3}
@@ -110,7 +110,7 @@ else:
   
 #### **Further Works and Ideas:** ####
 
-The ideas I will be aiming on are mentioned below, the basic idea for the Cpatcha Checker module has been discussed above.
+The ideas I will be aiming on are mentioned below, the basic idea for the Captcha Checker module has been discussed above.
 
 * Working on the Senser paper (implementing a demo code to see how it works). 
 * Working on Dockers or easy-local installation.
