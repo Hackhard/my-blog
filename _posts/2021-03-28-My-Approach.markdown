@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My Approach"
-date: 2021-03-28 22:49:09 +0530
+date: 2021-03-29 11:03:09 +0530
 categories: jekyll update
 ---
 
