@@ -30,7 +30,7 @@ Above mentioned points can therefore be summarized into below 4 points. They are
 3. Websites that returns captchas     [ii]
 4. Websites that completely block Tor [i]
 
-### **Detailed Prospective: ** ###
+### **Detailed Prospective:** ###
 
 Below I've tried adding the low level flowchart, as well as the working and the logic part, that could be useful in the future.
 
