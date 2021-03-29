@@ -106,14 +106,18 @@ else:
     else:
 	return false    # The Website is not similar
   ```
-#### Further Works and Ideas: ####
+  
+  
+#### **Further Works and Ideas:** ####
 
 The ideas I will be aiming on are mentioned below, the basic idea for the Cpatcha Checker module has been discussed above.
 
 * Working on the Senser paper (implementing a demo code to see how it works). 
 * Working on Dockers or easy-local installation.
 * Working on the metrics and graphs related to the Dashboard.
-* Also further experimenting on few cloudflare sites or maybe registering a cloudflare website (to get some better idea on how cloudflare works for Tor)  Refs: [website 1](https://blog.cloudflare.com/cloudflare-onion-service/) [website 2](https://blog.cloudflare.com/the-trouble-with-tor/) [website 3](https://blog.torproject.org/trouble-cloudflare?page=1)
+* Also further experimenting on few cloudflare sites or maybe registering a cloudflare website (to get some better idea on how cloudflare works for Tor)  
+
+Refs: [website 1](https://blog.cloudflare.com/cloudflare-onion-service/), [website 2](https://blog.cloudflare.com/the-trouble-with-tor/), [website 3](https://blog.torproject.org/trouble-cloudflare?page=1)
 
 
 -----------------------------------------
