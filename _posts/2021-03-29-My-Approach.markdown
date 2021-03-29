@@ -47,12 +47,14 @@ The non-Tor path is sort of a role-model path. We’ll compare the Tor path to t
 Website Over Tor | Website not over Tor
 --------|--------
 ![image](https://user-images.githubusercontent.com/34208125/112788793-451e7a80-9079-11eb-8ff3-812e4a942870.png) | ![image](https://user-images.githubusercontent.com/34208125/112788866-75661900-9079-11eb-928e-2083aac75f91.png)
+{Fig 1.1}
 
 Or even in cases like these: 
 
 Website Over Tor | Website not over Tor
 --------|--------
 ![image](https://user-images.githubusercontent.com/34208125/112789352-882d1d80-907a-11eb-92ee-a012a2bc8bc6.png) | ![image](https://user-images.githubusercontent.com/34208125/112789391-9b3fed80-907a-11eb-90a6-88012df9c589.png)
+{Fig 1.2}
 
 If for some reasons we cannot differentiate using the superficial information. Let’s say that the Tb and Nb return the same status codes `status_code(Tb) == status_code(Nb)` and we cannot determine the differences. 
 We next move to other options like:
@@ -61,6 +63,7 @@ We next move to other options like:
 Website Over Tor | Website not over Tor
 --------|--------
 ![image](https://user-images.githubusercontent.com/34208125/112789546-f4a81c80-907a-11eb-8961-4563fb040236.png) | ![image](https://user-images.githubusercontent.com/34208125/112789554-f83ba380-907a-11eb-9192-f65e649e344d.png)
+{Fig 1.3}
 
 Here we can see that the status codes are `200`, but still there is a clear difference between the results, and for the same reason I’m planning to compare the length. 
 
@@ -91,12 +94,12 @@ if (status_code(Tb) != status_code(Nb)):
 else:
 
   if (DOM_len(Tb) << DOM_len(Nb)):
-    return false    # The Website might be partially blocked. Look at Fig: 4
+    return false    # The Website might be partially blocked. e.g. Fig: 1.3
     
   else:
   
-    p_c_t = prepare_consensus(Tb)   # Prepare consensus for the website using Tor.
-    p_c_n = prepare_consensus(Nb)   # Prepare consensus for the website using normal browser.
+    p_c_t = prepare_consensus(Tb)   # Prepare consensus using Tor.
+    p_c_n = prepare_consensus(Nb)   # Prepare consensus using normal browser.
     
     if (p_c_n == p_c_t):
     	return true     # The Website is similar
