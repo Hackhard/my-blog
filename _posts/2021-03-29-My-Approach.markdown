@@ -113,7 +113,7 @@ else:
 The ideas I will be aiming on are mentioned below, the basic idea for the Captcha Checker module has been discussed above.
 
 * Working on the Senser paper (implementing a demo code to see how it works). 
-* Working on Dockers or easy-local installation.
+* Working on Dockers for easy-local installation.
 * Working on the metrics and graphs related to the Dashboard.
 * Also further experimenting on few cloudflare sites or maybe registering a cloudflare website (to get some better idea on how cloudflare works for Tor)  
 
