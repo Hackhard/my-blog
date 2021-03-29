@@ -25,9 +25,30 @@ Last but not the least, websites such as [Github (4)](https://github.com/) that 
 ----------------------------------------------------------------------------------------
 
 Above mentioned points can therefore be divided into 4 parts. They are:
-1. Websites that don't block Tor      (4)
-2. Websites that partially block Tor  (3)
-3. Websites that returns captchas     (2)
-4. Websites that completely block Tor (1)
+
+1. Websites that don't block Tor      [4]
+2. Websites that partially block Tor  [3]
+3. Websites that returns captchas     [2]
+4. Websites that completely block Tor [1]
+
+# Next Steps: #
+
+## The Overall Flowchart: ##
+
+![image](https://user-images.githubusercontent.com/34208125/112788271-266bb400-9078-11eb-9a72-6932a6e7291d.png)
+
+## Working: ##
+
+The main focus is to track the websites including [**Alexa Top 500 sites**](https://www.alexa.com/topsites) blocking Tor exit nodes fully or partially. So, a basic approach would be comparing the Http status codes, Headers (browser dependant or not), DOM Tree of a given website with Tor exit node and non-Tor exit node, but it might not always give the correct results. So I’ll be trying to categorize the results into cases and try to cover them all. Below I’m trying to broaden each path:
+
+The non-Tor path is sort of a role-model path. We’ll compare the Tor path to this to find if there are any differences between the two paths, more extensively the tor exit nodes and browsers over tor to that of the non tor browsers. Since we are going to compare the information, we will save all the information that might help us with the comparison part. We are first going to fetch the Http headers, the http status codes, to get information of the websites (superficial-information) that might help to differentiate between the Tb [1] and Nb [2] without the need of scanning the whole website. We might achieve results easily for cases when `status_code(Tb) != status_code(Nb)`: 
+
+![image](https://user-images.githubusercontent.com/34208125/112788406-73e82100-9078-11eb-9a28-5ee1c39308f2.png)
+![image](https://user-images.githubusercontent.com/34208125/112788414-777ba800-9078-11eb-8380-3b0cef6b8021.png)
+
+Or even in cases like these: 
+
+
+
 
 
