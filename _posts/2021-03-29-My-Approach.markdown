@@ -93,7 +93,7 @@ if (status_code(Tb) != status_code(Nb)):
   
 else:
 
-  if (DOM_len(Tb) << DOM_len(Nb)):	#<< denotes much larger than
+  if (DOM_len(Tb) << DOM_len(Nb)):	# << denotes much larger than
     return false    # The Website might be partially blocked. e.g. Fig: 1.3
     
   else:
