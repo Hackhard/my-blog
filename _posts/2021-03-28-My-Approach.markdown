@@ -24,6 +24,7 @@ Last but not the least, websites such as [Github (4)](https://github.com/) that 
 
 ----------------------------------------------------------------------------------------
 
+
 Above mentioned points can therefore be divided into 4 parts. They are:
 
 1. Websites that don't block Tor      [4]
@@ -43,11 +44,65 @@ The main focus is to track the websites including [**Alexa Top 500 sites**](http
 
 The non-Tor path is sort of a role-model path. We’ll compare the Tor path to this to find if there are any differences between the two paths, more extensively the tor exit nodes and browsers over tor to that of the non tor browsers. Since we are going to compare the information, we will save all the information that might help us with the comparison part. We are first going to fetch the Http headers, the http status codes, to get information of the websites (superficial-information) that might help to differentiate between the Tb [1] and Nb [2] without the need of scanning the whole website. We might achieve results easily for cases when `status_code(Tb) != status_code(Nb)`: 
 
-WEbsite Over Tor | Website not over Tor
+Website Over Tor | Website not over Tor
 --------|--------
 ![image](https://user-images.githubusercontent.com/34208125/112788793-451e7a80-9079-11eb-8ff3-812e4a942870.png) | ![image](https://user-images.githubusercontent.com/34208125/112788866-75661900-9079-11eb-928e-2083aac75f91.png)
 
 Or even in cases like these: 
+
+Website Over Tor | Website not over Tor
+--------|--------
+![image](https://user-images.githubusercontent.com/34208125/112789352-882d1d80-907a-11eb-92ee-a012a2bc8bc6.png) | ![image](https://user-images.githubusercontent.com/34208125/112789391-9b3fed80-907a-11eb-90a6-88012df9c589.png)
+
+If for some reasons we cannot differentiate using the superficial information. Let’s say that the Tb and Nb return the same status codes `status_code(Tb) == status_code(Nb)` and we cannot determine the differences. 
+We next move to other options like:
+* Compare the length of generated DOM from both Tb and Nb, which might work for a case below: 
+ 
+Website Over Tor | Website not over Tor
+--------|--------
+![image](https://user-images.githubusercontent.com/34208125/112789546-f4a81c80-907a-11eb-8961-4563fb040236.png) | ![image](https://user-images.githubusercontent.com/34208125/112789554-f83ba380-907a-11eb-9192-f65e649e344d.png)
+
+Here we can see that the status codes are 200, but still there is a clear difference between the results, and for the same reason I’m planning to compare the length. 
+
+* Now, for such cases where there might be almost same length, we again cannot surely determine if the results are different. So we may approach it preparing the consensus of each website. We parse the DOM elements into a tree type structure with hashes, called Senser and collect the structure from all different NB we have (Chromium, Firefox, cURL, Requests) such that we get the picture of the unblocked-website we are looking for, and then accordingly get the results:
+ 
+	* If `Tb ≅  Nb` we know the Tor isn’t blocked.
+  
+	* If `Tb != Nb` we know that the specific Tor fingerprint is blocked.
+
+## The Logic: ##
+
+Below I’ve tried attaching the high-level _Flow-chart_ that details about the process followed by the _pseudocode_. 
+
+### HIGH LEVEL FLOW-CHART: ##
+
+![image](https://user-images.githubusercontent.com/34208125/112789927-d4c52880-907b-11eb-96da-706d7cd25ab9.png)
+
+### PSEUDO-CODE: ###
+
+```Python3
+Tb = TOR(url)   # fetch the url using Tor
+
+Nb = BROWSER(url)   # fetch the url using normal browser
+
+if (status_code(Tb) != status_code(Nb)): 
+  return false      # either returns captcha or is blocked.
+else:
+  if (DOM_len(Tb) << DOM_len(Nb)):
+    return false    # The Website might be partially blocked. Look at Fig: 4
+	else:
+    p_c_t = prepare_consensus(Tb)   # Prepare consensus for the website using Tor.
+    p_c_n = prepare_consensus(Nb)   # Prepare consensus for the website using normal browser.
+    if (p_c_n == p_c_t):
+      return true     # The Website is similar
+    else:
+	    return false    # The Website is not similar
+  ```
+
+
+
+
+
 
 
 
