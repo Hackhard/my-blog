@@ -17,7 +17,7 @@ That said, there are quite a few things I observed and this post would be on it.
 
 
 Certain websites like [Google](https://www.google.com) and [YouTube](https://www.youtube.com) on opening through Selenium browser [displays a popup(iframe)](https://stackoverflow.com/questions/64846902/how-to-get-rid-of-the-google-cookie-pop-up-with-my-selenium-automation).
-This makes it difficult to compare[1]. For some websites like [Lloyds Bank](https://www.lloydsbank.com/) it works great(that shows error page), but for some dynamic websites that change content according to the region/ip like [Bing](https://www.bing.com/) it doesn't work great.
+This makes it difficult to compare[1]. For some websites like [Lloyds Bank](https://www.lloydsbank.com/) and [Dan.me.uk](https://dan.me.uk) it works (that shows error page), but for some dynamic websites that change content according to the region/ip like [Bing](https://www.bing.com/) it doesn't give a satisfied data.
 
 **1. Cookie iframe/Popup:**
 ![tor_ google com](https://user-images.githubusercontent.com/34208125/115275027-e3749c00-a15e-11eb-8385-32fca0b18aec.png)
@@ -55,7 +55,7 @@ Another thing that could be added up on the before case could be searching for k
 
 That said, we see that in our Bing case, where the Tbb generated nodes were less, we need to determine what should be our calculated value that we could omit. Mathematically speaking:
 
-                           X (VALUE TO BE OMITTED) =  abs| DOM_nodes_Tbb(website) - DOM_nodes_Non_Tbb(website) |
+            X (VALUE TO BE OMITTED) =  abs| DOM_nodes_Tbb(website) - DOM_nodes_Non_Tbb(website) |
                                           
 Because it isn't always a case like Wikipedia or LinkedIn where the number of nodes are the same as there are also cases like Google which presents a cookie popup(if one wants to browse with their cookies saved) etc.
 So finding a suitable value for X should help to minimise errors and also to detect if the sites return errors.
