@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pre-GSoC ?!"
+title:  "Pre-GSoC"
 date: 2021-04-19 13:49:09 +0530
 categories: jekyll update
 ---
