@@ -33,6 +33,7 @@ What if the difference in the total nodes are large but still the website doesn'
   + Number of DOM nodes (Non-Tor)      227
 
   ----------------------------------------------
+  
   + Length of Total HTML (Tor)     63699
   + Number of DOM nodes (Tor)      187
 
