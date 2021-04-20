@@ -27,7 +27,7 @@ But (that shows error page), but for some dynamic websites that change content a
 **A bit more on the Cookie iframe/Popup:**
 ![tor_ google com](https://user-images.githubusercontent.com/34208125/115275027-e3749c00-a15e-11eb-8385-32fca0b18aec.png)
 
- _Solution what I could think of: _
+ _Solution what I could think of:_
 
 + This kind of cookie hinders results, therefore one possible way is to programmatically remove these iframes by letting Selenium click on the Allow box (not displayed in the screenshot), but that websites might have different iframes, and might have to write a new case for each new website encountered with these Popups.
 
@@ -69,11 +69,11 @@ That said, we see that in our Bing case, where the Tbb generated nodes were less
 Because it isn't always a case like Wikipedia or LinkedIn where the number of nodes are the same as there are also cases like Google which presents a cookie popup(if one wants to browse with their cookies saved) etc.
 So finding a suitable value for X should help to minimise errors and also to detect if the sites return errors. For finding X, I'm bent towards calculating the percentage difference : 
 
-  ![Latex_img](http://latex2png.com/pngs/627432743219385d1332a863a27633a0.png)
+![Latex_img](http://latex2png.com/pngs/627432743219385d1332a863a27633a0.png)
 
 and check for websites that return an error page to answer: What is the percentage difference that these websites return. I'll try testing websites from [here](https://gitlab.torproject.org/legacy/trac/-/wikis/org/doc/ListOfServicesBlockingTor) to get these answers.
 
-_Another thing that could be added up on top of the doubtful cases would be searching for keywords (might be helpful in some cases that could be misleading) in the generated HTML, for both Tbb and Non-Tor browser. _
+_Another thing that could be added up on top of the doubtful cases would be searching for keywords (might be helpful in some cases that could be misleading) in the generated HTML, for both Tbb and Non-Tor browser._
 
 
 What are your thoughts. Do share, any suggestions would be welcomed!
