@@ -71,7 +71,7 @@ So finding a suitable value for X should help to minimise errors and also to det
 
 For finding X, I'm bent towards calculating the percentage difference : 
 
-![image](https://user-images.githubusercontent.com/34208125/115461662-4fcaca80-a247-11eb-8f67-3f2d5567029c.png)
+![image](https://user-images.githubusercontent.com/34208125/115465277-fd3fdd00-a24b-11eb-8aa2-304c29c0c1de.png)
 
 
 and check for websites that return an error page to answer: What is the percentage difference that these websites return. I'll try testing websites from [here](https://gitlab.torproject.org/legacy/trac/-/wikis/org/doc/ListOfServicesBlockingTor) to get these answers.
