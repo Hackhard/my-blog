@@ -59,22 +59,21 @@ Tor Screenshot:
 
 Here, a noticeable difference that can be seen in the screenshots are the **Languages:** bar and the cookie permission also. So, in these type of cases, problems might arise. And a question here could be asked as to What is a large difference? How much could a difference be justified between nodes returned by Tbb and Normal Browser?
 
-[Update: On running the code for bing 2-3 times I saw some noticeable differences, 229 nodes for non-tor browser and 233 nodes for tbb. This might be a case for different exit node]
+_[Update: On running the code for bing 2-3 times I saw some noticeable differences, 229 nodes for non-tor browser and 233 nodes for tbb. This might be a case for different exit node]_
 
 This suggests testing a website multiple times from a certain relay to get an average result and then to determine for the values. I hope this would remove any inconsistency.
-
 That said, we see that in our Bing case, where the Tbb generated nodes were less, we need to determine what should be our calculated value that we could omit. Mathematically speaking:
 
-         X (VALUE TO BE OMITTED) = DOM_nodes_Non_Tbb(website) - DOM_nodes_Tbb(website) 
+      X (VALUE TO BE OMITTED) = DOM_nodes_Non_Tbb(website) - DOM_nodes_Tbb(website) 
                                           
 Because it isn't always a case like Wikipedia or LinkedIn where the number of nodes are the same as there are also cases like Google which presents a cookie popup(if one wants to browse with their cookies saved) etc.
 So finding a suitable value for X should help to minimise errors and also to detect if the sites return errors. For finding X, I'm bent towards calculating the percentage difference : 
 
-![Latex_img](http://latex2png.com/pngs/f0e2bad8cce8251f0ff9545ee405dd04.png)
+   ![Latex_img](http://latex2png.com/pngs/627432743219385d1332a863a27633a0.png)
 
 and check for websites that return an error page to answer: What is the percentage difference that these websites return. I'll try testing websites from [here](https://gitlab.torproject.org/legacy/trac/-/wikis/org/doc/ListOfServicesBlockingTor) to get these answers.
 
-Another thing that could be added up on top of the doubtful cases would be searching for keywords (might be helpful in some cases that could be misleading) in the generated HTML, for both Tbb and Non-Tor browser. 
+_Another thing that could be added up on top of the doubtful cases would be searching for keywords (might be helpful in some cases that could be misleading) in the generated HTML, for both Tbb and Non-Tor browser. _
 
 
 What are your thoughts. Do share, any suggestions would be welcomed!
