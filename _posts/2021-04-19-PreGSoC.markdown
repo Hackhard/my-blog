@@ -70,7 +70,7 @@ That said, we see that in our Bing case, where the Tbb generated nodes were less
 Because it isn't always a case like Wikipedia or LinkedIn where the number of nodes are the same as there are also cases like Google which presents a cookie popup(if one wants to browse with their cookies saved) etc.
 So finding a suitable value for X should help to minimise errors and also to detect if the sites return errors. For finding X, I'm bent towards calculating the percentage difference : 
 
-{DOM_nodes_Non_Tbb(website) - DOM_nodes_Tbb(website)} /{DOM_nodes_Tbb(website) * 0.01}
+![Latex_img](http://latex2png.com/pngs/f0e2bad8cce8251f0ff9545ee405dd04.png)
 
 and check for websites that return an error page to answer: What is the percentage difference that these websites return. I'll try testing websites from [here](https://gitlab.torproject.org/legacy/trac/-/wikis/org/doc/ListOfServicesBlockingTor) to get these answers.
 
