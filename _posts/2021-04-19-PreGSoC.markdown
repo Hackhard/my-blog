@@ -17,7 +17,12 @@ That said, there are quite a few things I observed and this post would be on it.
 
 
 Certain websites like [Google](https://www.google.com) and [YouTube](https://www.youtube.com) on opening through Selenium browser [displays a popup(iframe)](https://stackoverflow.com/questions/64846902/how-to-get-rid-of-the-google-cookie-pop-up-with-my-selenium-automation).
-This makes it difficult to compare[1]. For some websites like [Lloyds Bank](https://www.lloydsbank.com/) and [Dan.me.uk](https://dan.me.uk) it works (that shows error page), but for some dynamic websites that change content according to the region/ip like [Bing](https://www.bing.com/) it doesn't give a satisfied data.
+This makes it difficult to compare[1]. For some websites like [Lloyds Bank](https://www.lloydsbank.com/) and [Dan.me.uk](https://dan.me.uk), sites that displays error pages, it works. [CLick here to see the results](https://github.com/Hackhard/Fetcher/blob/main/Error_websites/error_websites.txt). 
+Here we can see the clear difference between the nodes returned from Normal browser and Tbb for(Llyods Bank): 2129,84 respectively, which shows us that the website returned later might not contain that many information like it returned from the Normal Browser. 
+
+Another thing I noticed was: for the website adsabs.harvard.edu. It usually returns http://adsabs.harvard.edu/cgi-bin/access_denied for Tbb but while I was fetching the website this time it didn't return the ADS Access Denied Page. The data too suggests the similar number of nodes returned. 
+
+BuT (that shows error page), but for some dynamic websites that change content according to the region/ip like [Bing](https://www.bing.com/) it doesn't give a satisfied data.
 
 **1. Cookie iframe/Popup:**
 ![tor_ google com](https://user-images.githubusercontent.com/34208125/115275027-e3749c00-a15e-11eb-8385-32fca0b18aec.png)
@@ -67,6 +72,7 @@ So finding a suitable value for X should help to minimise errors and also to det
 Any suggestions would be welcomed!
 
 Thanks for reading  :)
+
  
 
 
