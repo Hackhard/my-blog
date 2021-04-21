@@ -46,14 +46,10 @@ But (that shows error page), but for some dynamic websites that change content a
 
 What if the difference in the total DOM nodes are large but still the websites don't generate errors? Like [Bing](https://www.bing.com) for example, during a trial resulted into the following data:
  
-  + Length of Total HTML (Non-Tor)     68332
-  + Number of DOM nodes (Non-Tor)      227
-
-  ----------------------------------------------
-  
-  
-  + Length of Total HTML (Tor)     63699
-  + Number of DOM nodes (Tor)      187
+|                 |                    Tor               | Non-Tor |
+|-----------------|--------------------------------------|---------|
+| Total Length of Html|         63699                        |  68332  |
+| Total DOM Nodes |         187                          |   227   |
 
 
 The Screenshots generated were:
