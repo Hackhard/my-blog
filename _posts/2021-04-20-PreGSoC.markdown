@@ -44,7 +44,7 @@ But (that shows error page), but for some dynamic websites that change content a
 ">- **Difference between total DOM nodes:**</span>
 
 
-What if the difference in the total DOM nodes are large but still the websites don't generate errors? Like [Bing](https://www.bing.com) for example, during a trial resulted into the following data:
+What if the difference in the total DOM nodes are large but still the websites doesn't generate errors? Like [Bing](https://www.bing.com) for example, during a trial resulted into the following data:
  
 |                 |                    Tor               | Non-Tor |
 |-----------------|--------------------------------------|---------|
@@ -68,7 +68,7 @@ _[Update: On running the code for bing 2-3 times I saw some noticeable differenc
 
 
 <div class="my-custom-style" style="font-family: 'Lato';">
-This suggests testing a website multiple times from a certain relay to get an average result and then to determine for the values. I hope this would remove any inconsistency.
+This suggests testing a website multiple times from multiple relays to get an average result and then to determine for the values. I hope this would remove any inconsistency.
 That said, we see that in our Bing case, where the Tbb generated nodes were less, we need to determine what should be our calculated value that we could omit. 
 <br>
 <br>
@@ -107,6 +107,12 @@ What are your thoughts. Do share, any suggestions would be welcomed!
 
 Thanks for reading  :)
 
+----------------------------------------------------
+
+Update: 
+
+ + To make the cookie of a site work, we need some to import it with profile and also manually accept the consent popup, which again does the same thing as accepting it with XPath or any other method. So Creating it for different websites could be an option? 
+ + Another inconsistency noticed could be seen between these two files: [Tor](https://raw.githubusercontent.com/Hackhard/Fetcher/main/2.0/Netflix_com/tor_%5BNetflix.com%5D_DOM_nodes.txt) and [Non Tor](https://raw.githubusercontent.com/Hackhard/Fetcher/main/2.0/Netflix_com/non_tor_%5BNetflix.com%5D_DOM_nodes.txt), for cases like these, we'll have to generate reports on same websites multiple times from different relays and then label it as a Error website (if the average nodes returned from Tor browser < average nodes returned from Normal browser).
  
 
 
