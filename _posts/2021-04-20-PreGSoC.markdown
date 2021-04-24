@@ -20,7 +20,7 @@ That said, there are quite a few things I observed and this post would be on it.
 
 
 Certain websites like [Google](https://www.google.com) and [YouTube](https://www.youtube.com) on opening through Selenium browser [displays a popup(iframe)](https://stackoverflow.com/questions/64846902/how-to-get-rid-of-the-google-cookie-pop-up-with-my-selenium-automation).
-This makes it difficult to compare[1]. For some websites like [Lloyds Bank](https://www.lloydsbank.com/) and [Dan.me.uk](https://dan.me.uk), sites that displays error pages, it works. [CLick here to see the results](https://raw.githubusercontent.com/Hackhard/Fetcher/main/2.0/disp.txt). 
+This makes it difficult to compare[1]. For some websites like [Lloyds Bank](https://www.lloydsbank.com/) and [Dan.me.uk](https://dan.me.uk), sites that displays error pages, it works. [Click here to see the results](https://raw.githubusercontent.com/Hackhard/Fetcher/main/2.0/disp.txt). 
 Here we can see the clear difference between the nodes returned from Normal browser and Tbb for(Llyods Bank): 2135, 84 respectively, thereby giving it a score of  2441.6% which shows us that the website returned later might not contain that many information like it returned from the Normal Browser (Thereby showing us that the websites might have an error page).
 
 Another thing I noticed was: for the website adsabs.harvard.edu. It usually returns http://adsabs.harvard.edu/cgi-bin/access_denied for Tbb but while I was fetching the website this time it didn't return the ADS Access Denied Page. The data too suggests the similar number of nodes returned. 
