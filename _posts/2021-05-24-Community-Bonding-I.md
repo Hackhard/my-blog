@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Findings to ponder"
-date:   2021-05-24 02:09:09 +0530
+date:   2021-05-25 02:09:09 +0530
 categories: jekyll update
 ---
 
