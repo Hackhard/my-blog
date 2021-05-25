@@ -57,4 +57,13 @@ Any suggestions are welcomed.
 
 Thanks!!
 
+----------
+
+Edit:
+
+The `HTTP(S)` error I faced was because I was forcing `https` request on websites supporting `http` requests and thereby returning the error shown by the image. 
+I wasn't using `http` by deafult because my ISP randomly injects Advertisement on `http` websites (DNS Poisoning). I had been using Cloudflare DNS from before but seems like it isn't working in my case. So today I queried in irc and got answers like using own recursors or DNS-over-TLS/HTTPS (DoT/DoH) but I feel my ISP intercepts my dns traffic too (That opens up another topic for research). I got across NextDNS (DoT with Blacklist) and it seems to be working as of now :)
+
+Meanwhile grepping around my folders containing seperate folders for each website (for easy debugging), I noticed `captcha` appearing in my reqeust_paths. Might be of help to distinguish a website from returning Captchas or not.
+
 
