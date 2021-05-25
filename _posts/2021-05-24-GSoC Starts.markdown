@@ -11,4 +11,4 @@ This is a bit late entry, but I'm exited to share with you all that I've been se
 
 Thank You.
 
-PS: I'll update this page later, as I've got already some findings to write on about.
+PS: I'll update this page later, as I've got already some findings to write on about and am already late because two days I didn't have my broadband :(.
