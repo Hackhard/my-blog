@@ -32,8 +32,17 @@ The `'/scripttemplates/otSDKStub.js'` file appears to have two different status 
 Now I plan to check for the very first `status code` and then check for just the error codes, like 4xx and 5xx and not all ( bad request (a 4XX client error or 5XX server error response)`raise_for_status()`), as we don't want websites redirecting to other pages (GDPR, consent pages, website based on geo-ip) to be labeled as Blocking-Tor.
 
 That being said the issues I faced were :
-+ With `http://` website as I was using `https://`. I guess I'll have to set Untrusted/Insecure Certificates.
-+ The script I'm using [this code](https://gitlab.torproject.org/woswos/CAPTCHA-Monitor/-/snippets/60) tries to get status codes till all components aren't fetched. For websites like Reddit, where it keeps loading slowly, it throws `Timeout loading page after 300000ms`. So I plan to break from the loop before the error is reached.
++ With `http://` website as I was using `https://`. 
+Citing an example below, while I was going through this particular [website](http://adsabs.harvard.edu)  :
+
+Client | http://adsabs.harvard.edu  | https://adsabs.harvard.edu
+------| ------- | -------------
+Non-Tor | ![non-tor_ http:adsabs harvard edu](https://user-images.githubusercontent.com/34208125/119474622-fb48cc80-bd69-11eb-943a-2d94459037d5.png) | ![non-tor_ https:adsabs harvard edu](https://user-images.githubusercontent.com/34208125/119474744-1fa4a900-bd6a-11eb-9bae-2b18d7f5248a.png)
+Tor | ![tor_ http:adsabs harvard edu](https://user-images.githubusercontent.com/34208125/119474807-2df2c500-bd6a-11eb-87fb-9cd3424331d1.png) | ![tor_ https:adsabs harvard edu](https://user-images.githubusercontent.com/34208125/119474852-35b26980-bd6a-11eb-9b75-eebc74b77892.png)
+
+Clicking the above links, you'll notice that the browser too loads the http version. I tried setting Untrusted/Insecure Certificates to true but didn't work.
+
++ The script I'm using [this code](https://gitlab.torproject.org/woswos/CAPTCHA-Monitor/-/snippets/60) tries to get status codes till all components aren't fetched. For websites like Reddit, where it keeps loading slowly, it throws `Timeout loading page after 300000ms`. So I plan to break from the loop before the error is reached or a try catch block to proceed ahead.
 
 Hence, for the website to be checked using status code my final Logic would be :
 
