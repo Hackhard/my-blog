@@ -41,19 +41,24 @@ def check():
   if request_module is blocked:
     # Just to be cautious
     check HAR
-    if HAR returns 3xx or 4xx or 5xx:
+    if HAR.first() returns 4xx or 5xx:
       go with request
+    elif HAR.first() returns 0:
+      "No case found till now"
     else:
       go with HAR.first()
 # Tor:
   if request_module is blocked:
     check HAR 
-    if HAR returns 3xx or 4xx or 5xx:
+    if HAR.first() returns 3xx or 4xx or 5xx:
       go with request
+    if HAR.first() returns 0:
+      "check for captcha and warnings"
+      pass
     else:
       go with HAR.first()
  ```
- I hope this would tend to make the code a bit better in terms of reliabilty.
+ I hope this would tend to make the code a bit better in terms of reliabilty. Discussions needed in here because it's my thought as of now.
  Also HAR.first() mean the first request status code sent to server. Generally the index page.
     
 
