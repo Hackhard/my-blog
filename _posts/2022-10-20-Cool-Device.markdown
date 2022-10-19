@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Device you'll Buy"
+title:  "A Device"
 date:   2022-10-20 03:00:09 +0530
 categories: blog
 ---
