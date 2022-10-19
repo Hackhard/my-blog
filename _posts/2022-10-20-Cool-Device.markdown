@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Device"
-date:   2022-10-20 03:00:09 +0530
+date:   2022-10-20 03:00:09 +0700
 categories: blog
 ---
 
