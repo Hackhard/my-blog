@@ -40,5 +40,4 @@ So unlike typical vaccuum cleaners where we had to hold them manually and also j
 
 One can always go look more about this [here](https://www.bagotte.com/upload/portal/20191219/6ce918b3265e62e3ee5aecc885883fc9.pdf). It is the pdf manual for Bagotta BG800 and it's use cases.
 
-
-[![]({https://www.bagotte.com/upload/portal/20200827/94-.jpg})]({https://youtu.be/DH8r2jbocCs} "Link Title")
+So with this I'd like to end my likings to Robo Vaccuum as also I'm too lazy to clean a messy place :P 
