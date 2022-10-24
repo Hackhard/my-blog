@@ -7,7 +7,7 @@ categories: gtf
 
 ## Wordle: An Idea
 
-| ![Wordle.jpg]([https://cdn.britannica.com/49/4649-050-BB5F0463/Nikola-Tesla.jpg](https://i.guim.co.uk/img/media/b4977654b509967eef77b87c256fa639f0ef807a/65_137_887_532/master/887.jpg?width=620&quality=45&dpr=2&s=none)) | 
+| ![Wordle.jpg](https://i.guim.co.uk/img/media/b4977654b509967eef77b87c256fa639f0ef807a/65_137_887_532/master/887.jpg?width=620&quality=45&dpr=2&s=none) | 
 |:--:| 
 | *Wordle* |
 
