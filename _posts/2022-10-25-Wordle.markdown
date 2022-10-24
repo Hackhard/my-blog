@@ -1,0 +1,65 @@
+---
+layout: post
+title:  "Wordle"
+date:   2022-10-25 02:41:09 +0700
+categories: gtf
+--
+
+## Wordle: An Idea
+
+| ![Wordle.jpg]([https://cdn.britannica.com/49/4649-050-BB5F0463/Nikola-Tesla.jpg](https://i.guim.co.uk/img/media/b4977654b509967eef77b87c256fa639f0ef807a/65_137_887_532/master/887.jpg?width=620&quality=45&dpr=2&s=none)) | 
+|:--:| 
+| *Wordle* |
+
+Recently, we had this game : [Wordle]() that rocked twitter with it's five letter words everyday concept, which is quite cool in itself, the idea is:
+
+There are five squared boxes which can be filled with letters from: *A to Z* and you need to guess the correct words with limits as in:
+- If the letters are marked in gray; it means the letters aren't present in the word.
+- If the letters are marked in orange; it means the letters aren't placed in the correct order in the word.
+- If the letters are marked in green; it means the letters are placed in the correct order in the word.
+
+The interesting part of this game is there's a list of five letters and you need to think of a word that works in the most optimum way. 
+
+##### A Simple solution:
+Well the one very straightforward solution would be to iterate over the list! TADA you're done... but, there's a caveat. You've only six chances to complete the game (or to find the correct word)
+
+##### Proposed Solution:
+The Solution I propose is by using the grep keyword, and since we know that the letters are non-repeatable. So I propose to choose different letters in each iteration and check the match.
+
+So, for example first let's select **WATER** <All letters are different>
+Now, we have three cases:
+- Either one or many letters match.
+     - Could be in the correct place
+     - Could be in the wrong place
+- No letters match [You repeat step 1]
+
+So, in other words we require a list and start grepping and piping the list and removing all the unwanted words, thereby getting the correct word.
+
+So for demonstration I'll try playing with a random word:
+- `WEARY` <All letters are different>
+- Position of `Y` seems to be correct from 1
+- `BOILY` since we already know `Y` is in the correct place, we need to find the other 4 words, we select another different word that comes before and with different letters each.
+- `O` and `Y` seem to be at the correct place.
+- `WEARBILS` are all wrong words. 
+- so using these information we can use `grep` and `|` operator to make a bash command like:
+  - `grep -iv W|E|A|R|B|I|L|S | grep -i [a-z][o][a-z][a-z][y]`
+  - So the above expression reduces a lot of possible words and thereby we can significantly reduce the number of trials to find the solution using the `grep` tool.
+  - 
+
+## The Hacky method:
+
+Well, in the source code if we look into the `js` files that get loaded, there is the `wordle.<number>.js` file in which we have the `Xn` variable containing all the words :P
+
+So, getting the number of days from `Qn = new Date(2021,5,19,0,0,0,0);` we get the word indexed on today and that's how we find the word using the source code method.
+
+Look forward to knowing more methods of finding the solution, if any... 
+  
+Thanks!
+
+  
+#### Resources:
+
+Pic: https://www.theguardian.com/games/2021/dec/23/what-is-wordle-the-new-viral-word-game-delighting-the-internet
+
+
+
