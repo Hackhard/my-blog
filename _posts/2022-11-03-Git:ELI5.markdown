@@ -42,8 +42,7 @@ _You can find more details in [here](https://git-scm.com/book/en/v2/Getting-Star
 ### How does it work and what's the benefit?
 
 ![](https://explainxkcd.com/wiki/images/4/4d/git.png)
-
-    From: https://explainxkcd.com/
+From: https://explainxkcd.com/
 
 
 Suppose, you and your friend, let's name him "X", decide to draw a picture, you can sketch and your friend can paint, but due to covid you both want to work on it from each of your home. 
