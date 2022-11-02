@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Git"
+title:  "Git: Explain Like I'm 5"
 date:   2022-11-03 02:41:09 +0700
 categories: gtf
 ---
@@ -41,10 +41,9 @@ _You can find more details in [here](https://git-scm.com/book/en/v2/Getting-Star
 
 ### How does it work and what's the benefit?
 
-![](https://explainxkcd.com/wiki/images/4/4d/git.png)
-
-From: https://explainxkcd.com/
-
+| ![](https://explainxkcd.com/wiki/images/4/4d/git.png) | 
+|:--:| 
+| *From: https://explainxkcd.com/* |
 
 Suppose, you and your friend, let's name him "X", decide to draw a picture, you can sketch and your friend can paint, but due to covid you both want to work on it from each of your home. 
 
